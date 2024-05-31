@@ -1,0 +1,21 @@
+.animated-border-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border: 4px solid;
+    border-image-slice: 1;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.category-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.7),
+                        0 0 10px rgba(255, 165, 0, 0.7),
+                        0 0 15px rgba(255, 255, 0, 0.7),
+                        0 0 20px rgba(0, 255, 0, 0.7),
+                        0 0 25px rgba(0, 0, 255, 0.7),
+                        0 0 30px rgba(75, 0, 130, 0.7),
+                        0 0 35px rgba(238, 130, 238, 0.7);
+}

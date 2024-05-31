@@ -1,0 +1,324 @@
+/* Estilos generales */
+
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #37475a;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+.header { /*Cabecera*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232f3e;
+    color: white;
+}
+
+.header-logo img { /*Logo barra lateral izquierda*/
+    height: 50px;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+}
+
+.header-search input {
+    padding: 10px 5px;
+    width: 400px;
+    border: none;
+    border-radius: 4px;
+}
+
+.header-search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #febd69;
+    cursor: pointer;
+}
+footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.carousel-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #b12704;
+    font-weight: bold;
+}
+
+.product-button {
+    background-color: #0f6df7; /* Azul oscuro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.product-button:hover {
+    background-color: #074999; /* Azul más oscuro */
+}
+
+.carousel-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.carousel-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 220px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative; /* Añadido para posicionar el logo */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.carousel-item-title {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.carousel-item-price {
+    font-size: 16px;
+    color: #b12704;    
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #131A22;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-button:hover {
+    background-color: #444;
+}
+
+.carousel-button.left {
+    left: 0;
+}
+
+.carousel-button.right {
+    right: 0;
+}
+
+.more-products {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #232f3e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Sidebar (barra lateral) */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #131A22;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+.main-sidebarf
+{   
+    color: white;
+    border: none;
+    padding: 1Spx 5px;
+
+}
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    color: white;
+}
+
+.sidebar-login {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.sidebar-menu h3 {
+    padding: 10px 15px;
+    color: #fff;
+    border-bottom: 1px solid #444;
+}
+
+/* Logo de Amazon en los productos del carrusel */
+.carousel-item-image {
+    position: relative;
+}
+ /*Amazon logo */
+.amazon-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+}
+/* Logo de Amazon en los productos del carrusel */
+.checkout-container {
+    padding: 20px;
+    text-align: center;
+}

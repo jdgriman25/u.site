@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProductosStyles.css">
+    <link rel="icon" href="/u.site copy 3/img/icono.png" type="image/png">
+    <meta name="description" content="Pagina para la compra y venta de todo tipo de productos">
+    <meta name="keywords" content="compra y venta, amazon, mercadolibre, alixepress, mercancia, shein, ropa, pc, compuntadoras">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="author" content="Jose Griman">
+    <meta name="title" content="U site">
+    <meta name="OG: title">
+    <meta name="OG: image">
+    <meta name="OG: description">
+    <title>Detalles del Producto</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- Logo de Amazon -->
+            <div class="header-logo">
+                <a href="https://www.amazon.com">
+                    <img src="https://i.postimg.cc/k40MV4mM/usite-logo3.png" alt="ui comercio real">
+                </a>
+            </div>
+
+            <!-- Barra de búsqueda -->
+            <div class="header-search">
+                <input type="text" id="search-bar" placeholder="Buscar productos, marcas y más...">
+                <button onclick="searchAmazon()">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Barra de menú -->
+        <div>
+            <nav>
+                <ul>
+                    <i class="bi bi-house-door"></i></i> <a href="/u.site copy 3/">   Inicio</a>
+                    <i class="bi bi-handbag"></i><a href="#">           Ofertas</a>        
+                    <i class="bi bi-shop"></i><a href="#">              Tiendas</a>                        
+                    <i class="bi bi-person-circle"></i><a href="#">     Vendedores</a>              
+                    <i class="bi bi-gift"></i><a href="#">              Tarjeta de regalo</a> 
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal del producto -->
+    <div class="product-container">
+        <div class="product-images">
+            <img id="main-image" src="/u.site copy 3/img/camisa_algodon_1.webp" alt="Producto Principal">
+            <div class="product-thumbnails">
+                <img src="/u.site copy 3/img/camisa_algodon_black .jpg" alt="Variación 1" onclick="changeImage(this)">
+                <img src="/u.site copy 3/img/camisa_algodon_vino.jpg" alt="Variación 2" onclick="changeImage(this)">
+                <img src="/u.site copy 3/img/camisa_algodon_verde .jpg" alt="Variación 3" onclick="changeImage(this)">
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Nombre del Producto</h1>
+            <p class="product-price">$999.99</p>
+            <p class="product-stock">Cantidad en stock: 20</p>
+            <p class="product-description">Descripción del producto...</p>
+            <h3>Detalles del Producto</h3>
+            <ul class="product-specs">
+                <li>Detalle 1: valor</li>
+                <li>Detalle 2: valor</li>
+                <li>Detalle 3: valor</li>
+                <!-- Agrega más detalles según sea necesario -->
+            </ul>
+            <div class="product-actions">
+                <!--botones-->
+                <button class="product-button" onclick="buyNow()">Comprar Ahora</button>
+                <button class="product-button" onclick="seestore()">Ver Tienda Online</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Función para cambiar la imagen principal
+        function changeImage(thumbnail) {
+            document.getElementById('main-image').src = thumbnail.src;
+        }
+
+        // Función para manejar la acción de agregar al carrito
+        function addToCart() {
+            alert('Producto agregado al carrito.');
+        }
+         // Función para manejar la acción de comprar ahora
+        function buyNow() {
+            window.location.href = 'https://amzn.to/4aKrBMW'; // Ruta interna
+        }
+         // Función para manejar la acción de comprar ahora
+        function seestore() {
+            window.location.href = 'https://www.instagram.com/techgracapf/'; // Ruta interna
+        }
+        
+
+        // Función para manejar la búsqueda
+        function searchAmazon() {
+            const query = document.getElementById('search-bar').value;
+            if (query) {
+                const url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}`;
+                window.open(url, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>

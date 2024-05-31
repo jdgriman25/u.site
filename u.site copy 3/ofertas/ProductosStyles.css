@@ -1,0 +1,151 @@
+/* Estilos CSS para la página de detalles del producto */
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-images {
+    flex: 1;
+    text-align: center;
+}
+
+.product-images img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-thumbnails img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.product-thumbnails img:hover {
+    border-color: #0f6df7;
+}
+
+.product-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 28px;
+    color: #b12704;
+    margin-bottom: 10px;
+}
+
+.product-stock {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-specs {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-specs li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.product-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-button {
+    background-color: #0f6df7;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #074999;
+}
+
+/* Estilos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    background-color: #0f6df7;
+    padding: 10px 0;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.header-logo img {
+    height: 50px;
+}
+.header-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.header-search input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+.header-search button {/*boton de buscar*/
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    background-color: #febd69;
+    color: #111;
+}
+.header-search button:hover {
+    background-color: #f3a847;
+}

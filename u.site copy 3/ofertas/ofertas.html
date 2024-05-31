@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/u.site copy 3/img/icono.png" type="image/png">
+    <link rel="stylesheet" href="/u.site copy 3/Encabezado y Footer/footer.css">
+    <meta name="description" content="Pagina para la compra y venta de todo tipo de productos">
+    <meta name="keywords" content="compra y venta, amazon, mercadolibre, alixepress, mercancia, shein, ropa, pc, compuntadoras">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="author" content="Jose Griman">
+    <meta name="title" content="U site">
+    <meta name="OG: title">
+    <meta name="OG: image">
+    <meta name="OG: description">
+    <title>U.Site</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- Logo de Amazon -->
+            <div class="header-logo">
+                <a href="https://www.amazon.com">
+                    <img src="https://i.postimg.cc/k40MV4mM/usite-logo3.png" alt="ui comercio real">
+                </a>
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="header-search">
+                <input type="text" id="search-bar" placeholder="Buscar productos, marcas y más...">
+                <button onclick="searchAmazon()">Buscar</button>
+            </div>
+        </div>
+        
+        <!-- Barra de menú -->
+        <div>                
+            <nav>            
+                <div class="main-sidebarf">                    
+                </div>
+                <ul>
+                    <i class="bi bi-arrow-90deg-left"></i> <a href="/u.site copy 3/Inicio/index.html">   Regresar</a>
+                    <i class="bi bi-handbag"></i><a href="/u.site copy 3/ofertas/ofertas.html">           Ofertas</a>        
+                    <i class="bi bi-shop"></i><a href="#">              Tiendas</a>                        
+                    <i class="bi bi-person-circle"></i><a href="#">     Vendedores</a>              
+                    <i class="bi bi-gift"></i><a href="#">              Tarjeta de regalo</a> 
+                </ul>
+            </nav>        
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+        
+        <!-- Contenedor de la barra lateral y el contenido principal -->
+        <div class="sidebar-container">
+            <!-- Barra lateral -->
+            <div id="mySidebar" class="sidebar">
+                <div class="sidebar-header">
+                    <span id="closeSidebarBtn" class="closebtn" onclick="toggleSidebar()">×</span>
+                    <div class="sidebar-login">
+                        <a href="#">Iniciar sesión</a>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <h3>Departamentos</h3>
+                    <a href="#">Electrónica</a>
+                    <a href="#">Computadoras</a>
+                    <a href="#">Libros</a>
+                    <a href="#">Ropa y accesorios</a>
+                    <a href="#">Hogar y cocina</a>
+                    <a href="#">Juguetes</a>
+                    <a href="#">Automotriz</a>
+                </div>
+            </div>
+<!-- Botón para abrir/cerrar la barra lateral --> 
+<button id="sidebarToggleBtn" class="openbtn" onclick="toggleSidebar()" >☰ Abrir Sidebar</button>
+
+            <!-- Contenido principal -->
+            <div id="main">
+                
+    <!-- Más Productos Abajo -->
+    <div  class="more-products">
+        <div  class="carousel-box">
+            <div class="carousel-title">Más Productos</div>
+            <div class="carousel-container">
+                <div class="carousel" id="moreCarousel">
+                    <div class="carousel-inner" id="moreCarouselInner">
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="/u.site copy 3/img/camisa_algodon_1.webp" alt="Camisa de Algodon">                                
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">JMIERR Camisa de algodón y lino con botones para hombre, casual, elegante, de manga larga, camisas de vestir para negocios</div>
+                            <div class="carousel-item-price">$30,00</div>                            
+                            <button class="product-button" onclick="product1()">Ver detalles</button>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="https://via.placeholder.com/150" alt="Producto 9">
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">Producto 9</div>
+                            <div class="carousel-item-price">$900</div>
+                            <button class="product-button" onclick="window.location.href='https://www.amazon.com/dp/B07PGL2ZSL'">Ver Producto</button>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="https://via.placeholder.com/150" alt="Producto 10">
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">Producto 10</div>
+                            <div class="carousel-item-price">$1000</div>
+                            <button class="product-button" onclick="window.location.href='https://www.amazon.com/dp/B08HR4RJ3Q'">Ver Producto</button>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="https://via.placeholder.com/150" alt="Producto 11">
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">Producto 11</div>
+                            <div class="carousel-item-price">$1100</div>
+                            <button class="product-button" onclick="window.location.href='https://www.amazon.com/dp/B08X2ZP3V8'">Ver Producto</button>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="https://via.placeholder.com/150" alt="Producto 12">
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">Producto 12</div>
+                            <div class="carousel-item-price">$1200</div>
+                            <button class="product-button" onclick="window.location.href='https://www.amazon.com/dp/B08Q7FZGFN'">Ver Producto</button>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="https://via.placeholder.com/150" alt="Producto 13">
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">Producto 13</div>
+                            <div class="carousel-item-price">$1300</div>
+                            <button class="product-button" onclick="window.location.href='https://www.amazon.com/dp/B0892K3DR5'">Ver Producto</button>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-item-image">
+                                <img src="https://via.placeholder.com/150" alt="Producto 14">
+                                <img class="amazon-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+                            </div>
+                            <div class="carousel-item-title">Producto 14</div>
+                            <div class="carousel-item-price">$1400</div>
+                            <button class="product-button" onclick="window.location.href='https://www.amazon.com/dp/B08GYKNCCP'">Ver Producto</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button left" onclick="slideLeftMore()">❮</button>
+                <button class="carousel-button right" onclick="slideRightMore()">❯</button>
+            </div>
+        </div>
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-top">
+        <div class="footer-column">
+            <h3>Conócenos</h3>
+            <ul>
+                <li><a href="#">Información corporativa</a></li>
+                <li><a href="#">Trabajar en ARZOPA</a></li>
+                <li><a href="#">Sostenibilidad</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Gana dinero con nosotros</h3>
+            <ul>
+                <li><a href="#">Vender productos en ARZOPA</a></li>
+                <li><a href="#">Programa de afiliados</a></li>
+                <li><a href="#">Publicidad</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Métodos de pago</h3>
+            <ul>
+                <li><a href="#">Tarjetas de crédito y débito</a></li>
+                <li><a href="#">Tarjetas de regalo</a></li>
+                <li><a href="#">PayPal</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Tu cuenta</a></li>
+                <li><a href="#">Envíos y devoluciones</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Tienda ARZOPA. Todos los derechos reservados.</p>
+<script>
+    // Función para manejar la búsqueda
+    function searchAmazon() {
+        const query = document.getElementById('search-bar').value;
+        if (query) {
+            const url = `https://www.amazon.com/s?k=${encodeURIComponent(query)}`;
+            window.open(url, '_blank');
+        }
+    }
+    function product1() {
+            window.location.href = 'producto1.html'; // Ruta interna
+        }
+    // Función para abrir/cerrar la barra lateral y cambiar el texto del botón
+    function toggleSidebar() {
+        const sidebar = document.getElementById("mySidebar");
+        const main = document.getElementById("main");
+        const button = document.getElementById("sidebarToggleBtn");
+
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            main.style.marginLeft = "0";
+            button.textContent = "☰ Abrir Sidebar";
+        } else {
+            sidebar.style.width = "250px";
+            main.style.marginLeft = "250px";
+            button.textContent = "☰ Cerrar Sidebar";
+        }
+    }
+
+    // Funciones para deslizar los productos en el segundo carrusel
+    let positionMore = 0;
+    const itemWidth = 220; // Ancho de cada producto (incluyendo margen)
+    const visibleItems = 3; // Número de productos visibles a la vez
+    const moreCarouselInner = document.getElementById('moreCarouselInner');
+
+    function slideLeftMore() {
+        if (positionMore < 0) {
+            positionMore += itemWidth;
+            updateCarousel(moreCarouselInner);
+        }
+    }
+
+    function slideRightMore() {
+        if (positionMore > -(moreCarouselInner.children.length - visibleItems) * itemWidth) {
+            positionMore -= itemWidth;
+            updateCarousel(moreCarouselInner);
+        }
+    }
+
+    function updateCarousel(inner) {
+        inner.style.transform = `translateX(${positionMore}px)`;
+    }
+
+    // Deslizar automáticamente los productos en el carrusel
+    function autoSlide() {
+        if (positionMore > -(moreCarouselInner.children.length - visibleItems) * itemWidth) {
+            slideRightMore();
+        } else {
+            positionMore = 0;
+            updateCarousel(moreCarouselInner);
+        }
+    }
+
+    setInterval(autoSlide, 10000); // Desliza cada 3 segundos
+
+
+    // Función para mostrar la imagen promocional anterior
+    function prevPromo() {
+        currentPromoIndex = (currentPromoIndex - 1 + promoItems.length) % promoItems.length;
+        changePromoBackground();
+    }
+
+    // Función para mostrar la siguiente imagen promocional
+    function nextPromo() {
+        currentPromoIndex = (currentPromoIndex + 1) % promoItems.length;
+        changePromoBackground();
+    }
+
+    // Función para cambiar el fondo del carrusel promocional cada 10 segundos
+    let currentPromoIndex = 0;
+    const promoItems = document.querySelectorAll('.promo-carousel-item');
+
+    function changePromoBackground() {
+        promoItems.forEach((item, index) => {
+            item.style.display = (index === currentPromoIndex) ? 'block' : 'none';
+        });
+    }
+
+    setInterval(nextPromo, 5000);
+    changePromoBackground();
+</script>
+</body>
+</html>
